@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "pages": 12
+  },
+  "data": [
+    {
+      "id": 3523,
+      "name": "Etno Cafe - Colombia Medellin 250g",
+      "price": 2535,
+      "image": "https://www.coffeedesk.com/photos/products/medium/40c7ae8c2779e1728bca0d4e440b0689.jpg"
+    },
+    {
+      "id": 3525,
+      "name": "Etno Cafe - Fusion 250g",
+      "price": 935,
+      "image": "https://www.coffeedesk.com/photos/products/medium/11ab628ae4279bd8fc7d13aabc458be9.jpg"
+    },
+    {
+      "id": 3526,
+      "name": "Etno Cafe - Intercontinental 250g",
+      "price": 1935,
+      "image": "https://www.coffeedesk.com/photos/products/medium/0f901e9cdab0334b132d20c42e1809be.jpg"
+    },
+    {
+      "id": 3527,
+      "name": "Etno Cafe - Italian roast 250g",
+      "price": 1025,
+      "image": "https://www.coffeedesk.com/photos/products/medium/7c8cc4a15c5a6adc5f8ca297005fe17f.jpg"
+    },
+    {
+      "id": 3557,
+      "name": "HAYB - Brazil Guaxupe Espresso 250g",
+      "price": 1225,
+      "image": "https://www.coffeedesk.com/photos/products/medium/e7dbcf4901a66c856654bd32c42aa5f0.jpg",
+      "best_seller": true
+    },
+    {
+      "id": 3556,
+      "name": "Le Piantagioni del Caffe - Alto Palomar FTO 250g",
+      "price": 1225,
+      "image": "https://www.coffeedesk.com/photos/products/medium/f1871d5239d1a8e928aaed80bb525a6a.jpg"
+    },
+    {
+      "id": 3557,
+      "name": "Le Piantagioni del Caffe - Brazil Cachoeira Da Grama 250g",
+      "price": 1125,
+      "image": "https://www.coffeedesk.com/photos/products/medium/a1b2029db0ca010c61663cb407d84626.jpg"
+    },
+    {
+      "id": 3558,
+      "name": "Le Piantagioni del Caffe - Water Decaf 250g",
+      "price": 1145,
+      "image": "https://www.coffeedesk.com/photos/products/medium/120cc609b96187cd283e4d2cb5e368db.jpg"
+    }
+  ]
+}
