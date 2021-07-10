@@ -5,15 +5,13 @@
 	--color4: rgb(255,255,255);
 	--color5: rgb(107,61,16);
 }
-path {
-	fill: currentColor !important;
-}
 /*Header*/
 .header {
 	background: var(--color4);
 	width: 100%;
 	height: 8.9vh;
-	position: sticky;
+	position: fixed;
+	top: 0;
 	z-index: 50;
 }
 
@@ -22,27 +20,27 @@ path {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: 30px;
 	box-sizing: border-box;
 }
 .header__flexContainer-logo {
 	object-fit: contain;
 	color: var(--color3);
 	width: calc(50% - 20px);
-	height: calc(100% - 40px);
-	margin: auto 0;
+	height: 100%;
+	margin: 0;
 }
 .header__flexContainer-iconsContainer {
 	width: 22%;
-	height: calc(100% - 40px);
+	height: 100%;
 	display: flex;
 	align-items: center;
 }
 .header__flexContainer-iconsContainer-icon {
 	object-fit: contain;
 	color: var(--color3);
-	width: calc(50% - 40px);
-	height: 100%;
+	width: 40%;
+	height: 65%;
 	margin: auto;
 }
 /*Hero*/
@@ -65,16 +63,39 @@ path {
 	right: 0;
 	width: 90%;
 	height: 40%;
-	padding: 20px;
+	padding: 45px;
+	box-sizing: border-box;
+}
+.hero__offer-highlight, .hero__offer-description {
+	font-family: 'Karla';
 }
 .hero__offer-highlight, .hero__offer-title, .hero__offer-description, .hero__offer-seeMore {
 	color: var(--color4);
 	width: 100%;
 } 
+.hero__offer-description {
+	font-size: 3em;
+	margin: 0;
+	font-family: 'Karla';
+}
 .hero__offer-seeMore{
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	bottom: 0!important;
 	left: 0;
+	font-family: 'Karla';
+	font-size: 2.8em;
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+.hero__offer-title {
+	font-size: 4em;
+	font-family: 'Lora';
+	margin: 25px 0;
+}
+.hero__offer-highlight {
+	margin-top: 0;
+	font-size: 2.7em;
+	font-family: 'Karla';
 }
 /*Products*/
 .products {
@@ -82,6 +103,25 @@ path {
 	padding: 20px;
 	background: var(--color4);
 	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+}
+.products__modalButton {
+	background: rgb(255, 138, 91);
+	position: sticky;
+	top: 10%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: 85%;	
+	display: flex;
+	box-shadow: 2px 2px 12px 1px #000000;;
+}
+.products__modalButton-img {
+	width: 50%;
+	height: 46%;
+	object-fit: contain;
+	margin: auto;
 }
 .products__title {
 	width: calc(100% - 40px);
@@ -129,37 +169,53 @@ path {
 /*Newsletter*/
 .newsletter {
 	width: 100vw;
-	/*Height con js*/
-	padding: 30px;
-	background: rgb(138,85,35);
+	height: 47vh;
+	padding: 2.82vh 4.59vw 2.12vh 4.59vw;
+	background: rgb(219,176,135);
 	box-sizing: border-box;
 }
-.newsletter__tile {
-	color: var(--color3);
+.newsletter__title {
+	color: var(--color3)!important;
 	margin-bottom: 30px;
+	font-size: 6em;
+	font-family: 'Lora';
+	height: 33%;
 }
 .newsletter__label {
 	color: var(--color5);
+	font-size: 2.5em;
+	font-family: 'Karla';
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 20px;
 }
 .newsletter__mail{
 	outline: none;
 	border: none;
 	color: var(--color5);
-	padding: 10px;
+	height: 20%;
+	padding-top: 15px;
+	font-size: 3em;
+	background: var(--color2);
 }
 .newsletter__submit {
 	background: var(--color3);
-	padding: 10px;
+	height: 20%;
+	padding-top: 15px;
+	font-size: 3em;
+	color: var(--color4);
+}
+.newsletter__submit:hover {
+	background: rgb(10, 10, 10);
 }
 .newsletter__mail::placeholder {
-	background: var(--color5);
+	color: var(--color5);
+	font-size: 1em;
+	font-weight: bold;
 }
-.newsletter__mail, .newsletter__submit, .newsletter__label, .newsletter__tile, .newsletter__mail::placeholder {
+.newsletter__mail, .newsletter__submit, .newsletter__label, .newsletter__title, .newsletter__mail::placeholder {
 	width: 100%;
 	text-align: center;
-}
-.newsletter__mail {
-	width: calc(100% - 20px);
 }
 /*Footer*/
 .footer__copyright, .footer__info, .footer__socialMedia-link, .footer__socialMedia, .footer__img {
@@ -180,6 +236,10 @@ path {
 	height: calc((100vh - 30px - 10px)/10*3);
 	margin-bottom: 10px;
 	margin: auto;
+	font-size: 2.7em;
+	font-family: 'Karla';
+	color: var(--color4);
+	line-height: 80px;
 }
 .footer__img{
 	width: 50%;
@@ -199,11 +259,20 @@ path {
 	width: 10%;
 	text-align: center;
 	margin: 0;
+	font-size: 3em;
+	font-family: 'Karla';
+	color: var(--color4);
+	text-decoration: none;
 }
 .footer__copyright {
 	width: 100%;
 	height: calc((100vh - 30px - 10px)/15);
 	border-top: 5px solid rgb(190, 190, 190);
+	font-size: 3.2em;
+	padding-top: 35px;
+	box-sizing: border-box;
+	font-family: 'Karla';
+	color: var(--color4);
 }
 /*Modal*/
 .modalOverlay {
@@ -211,6 +280,10 @@ path {
 	height: 100vh;
 	background: rgba(0, 0, 0,.3);
 	display: flex;
+	position: fixed;
+	z-index: 300;
+	top: 0;
+	left: 0;
 }
 .modal {
 	padding: 2.12vh 4.59vw;
@@ -231,10 +304,14 @@ path {
 .modal__head-highlight {
 	grid-row: 1 / 2;
 	grid-column: 1 / 2;
+	font-size: 2.7em;
+	font-family: 'Karla';t
 }
 .modal__head-title {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
+	font-size: 6em;
+	font-size: 'Lora';
 }
 .modal__head-highlight, .modal__head-title {
 	width: 100%;
@@ -260,7 +337,8 @@ path {
 	overflow-y: auto;
 	width: 100%;
 	color: var(--color3);
-	font-size: 4em;
+	font-size: 3.7em;
+	font-family: 'Karla';
 	margin: 0;
 }
 .modal__proceedButton {
@@ -278,6 +356,8 @@ path {
 	width: 46.5%;
 	border: none;
 	box-sizing: border-box;
+	text-align: center;
+	font-size: 3em;
 }
 .toggle {
 	display: none;

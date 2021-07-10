@@ -5,7 +5,9 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -21,14 +23,18 @@
 	<div class="hero">
 		<img src="assets/hero.jpg" class="hero__img">
 		<div class="hero__offer">
-			<p class="hero__offer-highlight"></p>
-			<h2 class="hero__offer-title"></h2>
-			<p class="hero__offer-description"></p>
-			<p class="hero__offer-seeMore"></p>
+			<p class="hero__offer-highlight">HIGHLIGHT</p>
+			<h2 class="hero__offer-title">Exclusive coffe of the world</h2>
+			<p class="hero__offer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p class="hero__offer-seeMore">Explore the store</p>
 		</div>
 	</div>
 
 	<div class="products">
+		<div class="products__modalButton">
+			<img class="products__modalButton-img" src="assets/icon-comment.svg">
+		</div>
 		<h1 class="products__title"></h1>
 		<div class="products__grid">
 			<!--Insert js-->
@@ -36,38 +42,65 @@
 	</div>
 
 	<div class="newsletter">
-		<h2 class="newsletter__title"></h2>
-		<p class="newsletter__label"></p>
-		<input type="email" name="email" class="newsletter__mail">
-		<input type="submit" name="" class="newsletter__submit">
+		<h2 class="newsletter__title">Don't miss any offer.</h2>
+		<p class="newsletter__label">Your Email</p>
+		<input type="email" name="email" class="newsletter__mail" placeholder="MYEMAIL@WONDERCRAFT.COM">
+		<input type="submit" name="" value="SIGN ME UP!" class="newsletter__submit">
 	</div>
 
 	<footer class="footer">
-		<p class="footer__info"></p>
-		<p class="footer__info"></p>
-		<p class="footer__info"></p>
-		<p class="footer__info"></p>
+		<p class="footer__info"><strong>TYPE</strong><br>For Home<br>For Office<br>For Espresso<br>100% Arabica<br>Speciality</p>
+		<p class="footer__info"><strong>VARIATIES</strong><br> Colombia<br>Ethiopia<br>Puerto Rico<br>Honduras <br>Java</p>
+		<p class="footer__info"><strong>ROASTERIES</strong> <br>Poland<br>Germany<br>Sweden<br>Italy</p>
+		<p class="footer__info"><strong>BRANDS</strong><br>Arcaffe<br>Johan & Nystrom<br>Audun Coffe<br>HAYB<br>Hard Beans<br>Coffelab</p>
 		<img class="footer__img" src="assets/wondercraft-logo2.svg">
 		<div class="footer__socialMedia">
-			<a href="" class="footer__socialMedia-link"></a>
-			<a href="" class="footer__socialMedia-link"></a>
-			<a href="" class="footer__socialMedia-link"></a>
+			<a href="" class="footer__socialMedia-link"><strong>FB</strong></a>
+			<a href="" class="footer__socialMedia-link"><strong>IG</strong></a>
+			<a href="" class="footer__socialMedia-link"><strong>YT</strong></a>
 		</div>
-		<p class="footer__copyright"></p>
+		<p class="footer__copyright">All rights resetver to WonderCraft S.A.S</p>
 	</footer>
 
-	<div class="modalOverlay ">
+	<div class="modalOverlay toggle">
 		<div class="modal">
 			<div class="modal__head">
-				<p class="modal__head-highlight"></p>
-				<h2 class="modal__head-title"></h2>
+				<p class="modal__head-highlight">ARE YOU READY TO TAKE ACTION</p>
+				<h2 class="modal__head-title">This is a pretty excludive modal</h2>
 				<button class="modal__head-closeButton">
 					<img src="assets/icon-close.svg" class="modal__head-closeButton-icon">
 				</button>
 			</div>
-			<p class="modal__content"></p>
-			<button class="modal__cancelButton"></button>
-			<button class="modal__proceedButton"></button>
+			<p class="modal__content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<button class="modal__cancelButton">CANCEL</button>
+			<button class="modal__proceedButton">PROCEED</button>
 		</div>
 	</div>
 
