@@ -50,8 +50,13 @@ request.addEventListener("load",()=>{
 			productItem.appendChild(productItemPrice);
 
 			if (orderedData[i]['best_seller']) {
-				let bestSeller = document.createElement('P');
+				let bestSeller = document.createElement('DIV');
 				bestSeller.classList.add('bestseller');
+
+				let bestSellerText = document.createElement('P');
+				bestSeller.classList.add('bestseller__content');
+				bestSellerText.textContent = "BEST SELLER"
+				bestSeller.appendChild(bestSellerText);
 				productItem.appendChild(bestSeller);
 			}
 			documentFragment.appendChild(productItem);
