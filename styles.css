@@ -104,7 +104,6 @@
 	background: var(--color4);
 	box-sizing: border-box;
 	position: relative;
-	height: 100vh;
 }
 .products__modalButton {
 	background: rgb(255, 138, 91);
