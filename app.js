@@ -16,6 +16,16 @@ request.addEventListener("load",()=>{
 			}
 		}
 
+		orderedData.sort((a,b)=>{
+			if (a.name < b.name) {
+				return -1;
+			}
+			if (a.name > b.name) {
+				return 1;
+			}
+			return 0;
+		});
+
 		var documentFragment = document.createDocumentFragment();
 		var productsGrid = document.querySelector('.products__grid')
 
