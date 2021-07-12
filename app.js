@@ -72,13 +72,16 @@ let openModalButton = document.querySelector('.products__modalButton'),
 	closeModalButton = document.querySelector('.modal__head-closeButton'),
 	proceedButton = document.querySelector('.modal__proceedButton'),
 	cancelButton = document.querySelector('.modal__cancelButton'),
-	modal = document.querySelector('.modalOverlay');
+	modal = document.querySelector('.modal')
+	modalOverlay = document.querySelector('.modalOverlay');
 
 function openModal() {
-	modal.classList.remove('toggle');
+	modalOverlay.classList.remove('toggle');
+	modal.classList.add('active');
 };
 function closeModal() {
-	modal.classList.add('toggle');
+	modalOverlay.classList.add('toggle');
+	modal.classList.remove('active');
 };
 
 proceedButton.addEventListener('click',()=> {
