@@ -96,6 +96,7 @@ closeModalButton.addEventListener('click',()=> {
 cancelButton.addEventListener('click',()=> {
 	closeModal();
 });
-modal.addEventListener('click',()=> {
+modalOverlay.addEventListener('click',(ev)=> {
 	closeModal();
-});
+	ev.stopPropagation();
+},true);
